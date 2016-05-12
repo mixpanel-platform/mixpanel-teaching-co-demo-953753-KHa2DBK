@@ -24,7 +24,11 @@
   </head>
   <body class="mixpanel-platform-body">
     <script>
-    
+
+var view = new MapView({
+    container: "viewDiv",  // Reference to the DOM node that will contain the view
+    map: map               // References the map object created in step 3
+  });
 require([
   "esri/Map",
   "esri/views/MapView",
@@ -33,10 +37,6 @@ require([
   basemap: "streets"
 });
 
-var view = new MapView({
-    container: "viewDiv",  // Reference to the DOM node that will contain the view
-    map: map               // References the map object created in step 3
-  });
   
   
     </script>
